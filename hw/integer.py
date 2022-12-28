@@ -11,9 +11,9 @@ maxs = [250,  285, 211, 315]
 
 num = [7, 8, 2, 9, 6]
 
-current_answer = [0, 0, 0, 0, 0]
-current_temp1 = [0, 0, 0, 0, 0]
-current_temp2 = [0, 0, 0, 0, 0]
+currentAns = [0, 0, 0, 0, 0]
+currentT1 = [0, 0, 0, 0, 0]
+currentT2 = [0, 0, 0, 0, 0]
 
 answer = [0, 0, 0, 0, 0]
 
@@ -23,39 +23,39 @@ def Climbing():
     while failCount < 100:
         dh = random.randint(0,h)
         for i in range(max_num):
-            current_temp1[i] += dh
-            current_temp2[i] -= dh
-            a = Count(current_temp1)
-            b = Count(current_temp2)
+            currentT1[i] += dh
+            currentT2[i] -= dh
+            a = Count(currentT1)
+            b = Count(currentT2)
             if a >= b:
                 for j in range(max_num):
-                    current_answer[j] = current_temp1[j]
+                    currentAns[j] = currentT1[j]
             else:
                 for j in range(max_num):
-                    current_answer[j] = current_temp2[j]
+                    currentAns[j] = currentT2[j]
 
-            if limit(current_answer) == False:
+            if limit(currentAns) == False:
                 failCount += 1
-            elif limit(current_answer) == True:
+            elif limit(currentAns) == True:
                 Move()
                 failCount = 0
     print(answer, Count(answer))
             
-# 移動
+# Move
 def Move():
     for i in range(max_num):
-        answer[i] = current_answer[i]
-        current_temp1[i] = current_answer[i]
-        current_temp2[i] = current_answer[i]
+        answer[i] = currentAns[i]
+        currentT1[i] = currentAns[i]
+        currentT2[i] = currentAns[i]
 
-# 計算大小
+# Count max/min
 def Count(a):
     temp = 0
     for i in range(max_num):
         temp = temp + a[i]*num[i]
     return temp
 
-# 限制
+# Limit
 def limit(t):
     temp = 0
     for i in coefs:
@@ -65,7 +65,7 @@ def limit(t):
         temp += 1
     return True
 
-# 限制大小
+# limitCount
 def limitCount(a, b):
     temp = 0
     for i in range(max_num):
