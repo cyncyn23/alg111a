@@ -9,7 +9,7 @@
 ### #2 Create a matrix to place the Sudoku problems
 Sudoku problems from https://sudoku.com/
 ![sudokuQuestion](cynthia1231\alg111a\hw\final\sudokuQ.jpg)
-```
+```py
 question = [
     [0,0,0,0,7,8,0,0,5],
     [0,0,5,4,2,9,0,0,0],
@@ -24,7 +24,7 @@ question = [
 ```
 
 ### #3 Create a function to display Sudoku
-```
+```py
 def print_sudoku(board):
     rowCount = len(board)
     colCount = len(board[0])
@@ -44,7 +44,7 @@ def print_sudoku(board):
 ```
 
 ### #4 Solving
-```
+```py
 def solve (board):
     emptySpot = findEmpty(board)
     if not emptySpot:
@@ -64,7 +64,7 @@ def solve (board):
     return False
 ```
 #### #1 Find the blank
-```
+```py
 def findEmpty(board):
     rowCount = len(board)
     colCount = len(board[0])
@@ -76,7 +76,7 @@ def findEmpty(board):
     return None
 ``` 
 #### #2 Judge the rules
-```
+```py
 def available(board, ans, row, col):
     # check row
     for i in range (9):
@@ -100,7 +100,7 @@ def available(board, ans, row, col):
 ```
 ## Test Program
 ### Code
-```
+```py
 from sudoku import printSudoku
 from sudoku import startSolve
 
