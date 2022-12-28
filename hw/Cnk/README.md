@@ -1,4 +1,4 @@
-```
+```py
 def combine(self, n, k):
     res = []
     comb = list(range(1, k + 1))
