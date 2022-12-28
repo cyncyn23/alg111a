@@ -1,4 +1,5 @@
 ## Sudoku by Backtracking
+平常就很愛玩Sudoku，跟朋友交流後得到的靈感。
 
 ### #1 Clarify the problem
 ```
@@ -8,8 +9,8 @@
 
 ### #2 Create a matrix to place the Sudoku problems
 Sudoku problems from https://sudoku.com/
-![sudokuQuestion](cynthia1231\alg111a\hw\final\sudokuQ.jpg)
-```py
+(cynthia1231\alg111a\hw\final\sudokuQ.jpg)
+```
 question = [
     [0,0,0,0,7,8,0,0,5],
     [0,0,5,4,2,9,0,0,0],
