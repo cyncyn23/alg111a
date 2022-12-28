@@ -85,4 +85,8 @@ def limitCount(a, b):
 
 Climbing()
 ```
-[Result](https://github.com/cyncyn23/alg111a/tree/main/hw/integer.jpg)
+#### Result
+```
+PS C:\Users\user\Desktop\Github\cynthia1231\alg111a\hw> python integer.py
+[8, 8, 8, 8, 7] 250
+```
