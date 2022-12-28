@@ -1,4 +1,5 @@
 ## Sudoku by Backtracking
+平常就很愛玩Sudoku，跟朋友交流後得到的靈感。
 
 ### #1 Clarify the problem
 ```
