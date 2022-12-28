@@ -7,8 +7,8 @@ Algorithm Course Samples
 4ₓ₁ +7ₓ₂ +3ₓ₃ +8ₓ₄ +5ₓ₅ ≤ 211
 5ₓ₁ +13ₓ₂ +16ₓ₃ +3ₓ₄ -7ₓ₅ ≤ 315
 ```
-### climbing
-```
+### Climbing
+```py
 import random
 max_num = 5
 h = 1
